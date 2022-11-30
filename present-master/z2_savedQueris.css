@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.outerBox{
+    height: 100vh;
+    width: 100vw;
+    /* min-width: 940px; */
+    background: white;
+    overflow: hidden scroll;
+}
+
+.header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0px 2px 5px  rgb(119, 178, 255); */
+    padding:0 30px 0 20px;
+    height: 70px;
+    width: 100vw;
+    background: #0574bb;
+    margin: 0 auto;
+    /* border-radius: 0 0px 10px 10px; */
+    border: 1px solid black;
+    /* border-bottom: 1mm ridge gray; */
+    position: sticky;
+    top: 0;
+}
+.logo img{
+    height: 40px;
+}
+
+.signOff a{
+    display: flex;
+    height: 35px;
+    background: #f4f4f4;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    align-items: center;
+}
+.signOff a:hover{
+    /* background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118)); */
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+.signOff a img{
+    width: 30px;
+    height: 19px;
+    color: white;
+}
+
+.savedQueris{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.btnBlock{
+    display: flex;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: space-around;
+    margin-top: 15px;
+    background: #f4f4f4;
+    padding: 15px;
+    border: 1px solid gray;
+    width: 95vw;
+}
+.savedQueryiesBtn{
+    padding: 10px;
+    width: 17vw;
+    min-width: 40px;
+    background: #0574bb;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #666869;
+}
+.savedQueryiesBtn:hover{
+    background: #004f81;
+    cursor: pointer;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 95vw;
+    /* border: 2px solid #badef4; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #e4e3e3;
+    color: rgb(73, 73, 73);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
